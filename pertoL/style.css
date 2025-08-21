@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #3D4846;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  display: none;
+  text-align: center;
+  max-width: 700px;
+  padding: 40px;
+  background: hsl(0, 0%, 56%);
+  border-radius: 12px;
+
+}
+
+.frame.active {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff9800;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.skills button {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+}
+
+.project-card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 350px;
+  text-align: left;
+}
+
+.contact-card h2 {
+  margin-bottom: 15px;
+  color: #3d4846;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  color: #333;
+}

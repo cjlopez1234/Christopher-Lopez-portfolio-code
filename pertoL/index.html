@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="frame active" id="intro">
+    <h1>Welcome to My Portfolio</h1>
+    <button onclick="showFrame('profile')">Enter</button>
+  </section>
+
+  <section class="frame" id="profile">
+    <img src="TOPHER.jpg" alt="Profile" class="profile-pic">
+    <h2>Christopher T. Lopez Jr</h2>
+    <p>BSIT - 2D</p>
+    <div class="nav-buttons">
+      <button onclick="showFrame('about')">About Me</button>
+      <button onclick="showFrame('skills')">Skills</button>
+      <button onclick="showFrame('projects')">Projects</button>
+      <button onclick="showFrame('contact')">Contact</button>
+     <br> <button onclick="showFrame('intro')">Back</button></br>
+    </div>
+  </section>
+
+  <section class="frame" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Christopher T. Lopez Jr, a 20-year-old Information Technology student 
+      passionate about programming, web development, and problem-solving. 
+      I love exploring new methods, gaining knowledge, and building practical 
+      solutions through code.
+    </p>
+    <button onclick="showFrame('profile')">Back</button>
+  </section>
+
+  <section class="frame" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <button onclick="showFrame('html-skill')">HTML</button>
+      <button onclick="showFrame('css-skill')">CSS</button>
+      <button onclick="showFrame('figma-skill')">Figma</button>
+      
+    </div>
+    <button onclick="showFrame('profile')">Back</button>
+  </section>
+
+  <section class="frame" id="html-skill">
+    <h2>HTML</h2>
+    <img src="html.jpg" alt="A description of the image" width="350" height="300">
+    <br><button onclick="showFrame('skills')">Back</button></br>
+  </section>
+
+  <section class="frame" id="css-skill">
+    <h2>CSS</h2>
+    <img src="css.jpg" alt="A description of the image" width="300" height="300">
+    <br><button onclick="showFrame('skills')">Back</button></br>
+  </section>
+
+  <section class="frame" id="figma-skill">
+    <h2>Figma</h2>
+    <img src="figma.jpg" alt="A description of the image" width="350" height="300">
+   <br><button onclick="showFrame('skills')">Back</button></br>
+  </section>
+
+  <section class="frame" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="project.jpg" alt="Project">
+      <p>
+        This project website for Nike shoes highlights their stylish designs, advanced technology, and durability for both sports and everyday wear. It aims to give customers an easy way to explore, choose, and purchase the perfect pair while showcasing Nike’s commitment to quality and innovation.
+      </p>
+    </div>
+    <button onclick="showFrame('profile')">Back</button>
+  </section>
+
+<section class="frame" id="contact">
+    <div class="contact-card">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> lopezchristopher1113@gmail.com</p>
+    <p><strong>Phone:</strong> 0967-459-4134</p>
+    <p><strong>Address:</strong> Buagsong, Cordova, Cebu</p>
+    <p><strong>Facebook:</strong> cj lopez</p>
+    <p><strong>Instagram:</strong> 444topher</p>
+    <br> <button onclick="showFrame('profile')">Back</button></br>
+  </div>
+</section>
+
+  <script>
+    function showFrame(id) {
+      document.querySelectorAll('.frame').forEach(f => f.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
